@@ -1,0 +1,179 @@
+:root{
+    --primary:#1e3a8a;
+    --secondary:#3b82f6;
+    --light:#e0f2fe;
+    --text:#0f172a;
+    --white:#ffffff;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial;
+    background:var(--light);
+    color:var(--text);
+}
+
+/* HEADER */
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px;
+    background:var(--primary);
+    color:white;
+}
+
+nav a{
+    color:white;
+    margin-left:15px;
+    text-decoration:none;
+}
+
+/* HERO */
+.hero{
+    height:90vh;
+    background:linear-gradient(to right,var(--secondary),var(--primary));
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-title{
+    font-size:70px;
+    line-height:1.6;
+}
+
+.hero-subtitle{
+    font-size:22px;
+    line-height:2;
+}
+
+.hero button{
+    padding:12px 25px;
+    border:none;
+    border-radius:20px;
+    background:var(--primary);
+    color:white;
+    cursor:pointer;
+}
+
+/* SECTIONS */
+section{
+    padding:60px;
+}
+
+h2{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+/* SKILLS */
+.skills-container{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:15px;
+}
+
+.skill-card{
+    background:white;
+    padding:20px;
+    text-align:center;
+    border-radius:10px;
+}
+
+/* TABLE */
+table{
+    width:100%;
+    border-collapse:collapse;
+}
+
+th{
+    background:var(--primary);
+    color:white;
+    padding:15px;
+}
+
+td{
+    background:#dbeafe;
+    padding:15px;
+    text-align:center;
+}
+
+/* PROJECTS */
+.projects-grid{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.project-card{
+    background:white;
+    padding:20px;
+    border-radius:10px;
+    text-align:center;
+    width:250px;
+}
+
+.project-card img{
+    width:80px;
+}
+
+/* CONTACT */
+.contact-container{
+    display:flex;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.contact-form,
+.contact-info{
+    flex:1;
+    padding:25px;
+    border-radius:10px;
+}
+
+.contact-form{
+    background:white;
+}
+
+.contact-info{
+    background:#dbeafe;
+}
+
+.contact-form form{
+    display:flex;
+    flex-direction:column;
+    gap:10px;
+}
+
+input,textarea{
+    padding:10px;
+    border-radius:8px;
+    border:1px solid #ccc;
+}
+
+button{
+    padding:10px;
+    background:var(--primary);
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+/* FOOTER */
+footer{
+    text-align:center;
+    padding:20px;
+    background:var(--primary);
+    color:white;
+}
